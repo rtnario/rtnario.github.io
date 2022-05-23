@@ -1,5 +1,7 @@
 # rtnario.github.io
 
+## ***This page is under construction and will be undergoing several revisions.***
+
 1. UNDERSTAND THE PROBLEM
     - I need a way to showcase my skills as a front-end engineer on the web.
     - I do not have professional experience as a front-end engineer, but I have one year
