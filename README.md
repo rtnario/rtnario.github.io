@@ -1,8 +1,8 @@
 # rtnario.github.io
 
-## ***This page is under construction and will be undergoing several revisions.***
+> This page is under construction and will be undergoing several revisions. Below are my notes for constructing the page.
 
-1. UNDERSTAND THE PROBLEM
+## Step 1: UNDERSTAND THE PROBLEM
     - I need a way to showcase my skills as a front-end engineer on the web.
     - I do not have professional experience as a front-end engineer, but I have one year
       of experience as a back-end engineer, and two years as a Scrum Master.
@@ -11,7 +11,7 @@
       this showcase is consequently my best foot forward in sharing my passion, ability,
       and craft to the world.
 
-2. PLAN
+## Step 2: PLAN
     - I will accomplish the above through the creation of a portfolio website.
         - It will have a short introduction, and an anecdote to my history with
           the front-end and why I wish to pursue it professionaly once more.
@@ -34,7 +34,7 @@
         - Footer
             - Contact Details
 
-3. DIVIDE AND CONQUER (IMPLEMENT)
+## Step 3: DIVIDE AND CONQUER (IMPLEMENT)
     - Start with the textual content
         - Program using strictly only HTML5
         - Add the ability to disable the stylesheet
