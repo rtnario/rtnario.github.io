@@ -1,0 +1,59 @@
+/* https://coolors.co/414361-f7f7f2-e4e6c3-899878-735f3d */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-color: #414361;
+    color: #F7F7F2;
+}
+
+.container-technical-areas,
+.container-development-tools,
+.container-interpersonal-skills,
+.container-others {
+    margin: 1em;
+    padding: 1em;
+    border: black solid 1px;
+}
+
+li {
+    margin-left: 2em;
+}
+
+.hero-text {
+
+}
+
+.skills-summary {
+    background-color: #f7f7f2;
+}
+
+.skills-summary > h2 {
+    text-align: center;
+}
+
+.flex-skills-summary {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-projects {
+    background-color: #899878;
+}
+
+.work-experience {
+    background-color: #E4E6C3;
+}
+
+.contact-information {
+    background-color: #735F3D;
+}
