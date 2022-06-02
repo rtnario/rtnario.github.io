@@ -6,23 +6,39 @@
     box-sizing: border-box;
 }
 
+html {
+    /* means 1 rem is 10px, easy multiplication */
+    font-size: 62.5%;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
 body {
     font-family: 'Assistant', sans-serif;
     font-weight: 300;
+    /* rem adapts to user and browser settings */
+    /* em stands for root em, looks straight at html font-size, no compounding */
+    font-size: 2.1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 500;
+}
+
+p, li {
+    /* 75 characters per line for readability reasons */
+    max-width: 75ch;
 }
 
 header {
     background-color: #414361;
     color: #F7F7F2;
-}
-
-.container-technical-areas,
-.container-development-tools,
-.container-interpersonal-skills,
-.container-others {
-    margin: 1em;
-    padding: 1em;
-    border: black solid 1px;
 }
 
 li {
@@ -43,11 +59,28 @@ li {
 
 .flex-skills-summary {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.container-technical-areas,
+.container-development-tools,
+.container-interpersonal-skills,
+.container-others {
+    flex: 1 0 17em;
+    /* em checks parent, goes up and up until it finds a font-size basis, in this case html */
+    /* em compounds, font-size * font-size ... */ 
+    /* padding that grows and adjusts with font size */
+    /* margins and padding base their em at the current ruleset before looking at the parent */
+    margin: 1em;
+    padding: 1em;
+    /* min-width: 17em; */
+    border: black solid 1px;
 }
 
 .personal-projects {
     background-color: #899878;
+    color: #F7F7F2;
 }
 
 .work-experience {
@@ -56,4 +89,5 @@ li {
 
 .contact-information {
     background-color: #735F3D;
+    color: #F7F7F2;
 }
