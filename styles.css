@@ -1,93 +1,87 @@
-/* https://coolors.co/414361-f7f7f2-e4e6c3-899878-735f3d */
+:root {
+    --font-content: 'Assistant', sans-serif;
+    --font-content-weight: 300;
+    --font-headers: 'Red Hat Mono', monospace;
+    --font-headers-weight: 500;
+    --font-color-bright: white;
+    --font-color-dark: black;
 
-*, *::before, *::after {
+    /* https://coolors.co/414361-f7f7f2-e4e6c3-899878-735f3d */
+    --palette-1: #414361;
+    --palette-2: #f7f7f2;
+    --palette-3: #899878;
+    --palette-4: #E4E6C3;
+    --palette-5: #735F3D;
+}
+
+*, *:before, *:after {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 html {
-    /* means 1 rem is 10px, easy multiplication */
     font-size: 62.5%;
 }
 
-.content-wrap {
-    max-width: 800px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
 body {
-    font-family: 'Assistant', sans-serif;
-    font-weight: 300;
-    /* rem adapts to user and browser settings */
-    /* em stands for root em, looks straight at html font-size, no compounding */
-    font-size: 2.1rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-content-weight);
+    font-size: 1.6rem;
 }
 
-h1, h2, h3 {
-    font-family: 'Red Hat Mono', monospace;
-    font-weight: 500;
-}
-
-p, li {
-    /* 75 characters per line for readability reasons */
+.content-wrap {
+    padding: 0 2em;
     max-width: 75ch;
+    /* border: 1px solid red; */
 }
 
-header {
-    background-color: #414361;
-    color: #F7F7F2;
+.main-section-pad {
+    padding: 4rem 0;
 }
 
-li {
-    margin-left: 2em;
+.bottom-margin-big {
+    margin-bottom: 4rem;
 }
 
-.hero-text {
-
+.bottom-margin-small {
+    margin-bottom: 2rem;
 }
 
-.skills-summary {
-    background-color: #f7f7f2;
+h1,
+h2,
+h3 {
+    font-family: var(--font-headers);
+    font-weight: var(--font-headers-weight);
 }
 
-.skills-summary > h2 {
-    text-align: center;
+.hero {
+    background-color: var(--palette-1);
+    color: var(--font-color-bright);
 }
 
-.flex-skills-summary {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.skills {
+    background-color: var(--palette-2);
+    color: var(--font-color-dark);
 }
 
-.container-technical-areas,
-.container-development-tools,
-.container-interpersonal-skills,
-.container-others {
-    flex: 1 0 17em;
-    /* em checks parent, goes up and up until it finds a font-size basis, in this case html */
-    /* em compounds, font-size * font-size ... */ 
-    /* padding that grows and adjusts with font size */
-    /* margins and padding base their em at the current ruleset before looking at the parent */
-    margin: 1em;
-    padding: 1em;
-    /* min-width: 17em; */
-    border: black solid 1px;
+.projects {
+    background-color: var(--palette-3);
+    color: var(--font-color-bright);
 }
 
-.personal-projects {
-    background-color: #899878;
-    color: #F7F7F2;
+.work {
+    background-color: var(--palette-4);
+    color: var(--font-color-dark);
 }
 
-.work-experience {
-    background-color: #E4E6C3;
+.contact {
+    background-color: var(--palette-5);
+    color: var(--font-color-bright);
 }
 
-.contact-information {
-    background-color: #735F3D;
-    color: #F7F7F2;
+@media (min-width: 73ch) {
+    .content-wrap {
+        max-width: 85%;
+        margin: 0 auto;
+    }
 }
