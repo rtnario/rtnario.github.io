@@ -59,6 +59,18 @@ h3 {
     color: var(--font-color-bright);
 }
 
+.grid-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    gap: 1em;
+}
+
+.card {
+    padding: 1em;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 25%);
+}
+
 .skills {
     background-color: var(--palette-2);
     color: var(--font-color-dark);
@@ -83,5 +95,15 @@ h3 {
     .content-wrap {
         max-width: 85%;
         margin: 0 auto;
+    }
+
+    h1::before,
+    h2::before {
+        content: "[ ";
+    }
+    
+    h1::after,
+    h2::after {
+        content: " ]";
     }
 }
