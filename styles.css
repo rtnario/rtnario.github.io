@@ -29,10 +29,14 @@ body {
     font-size: 1.6rem;
 }
 
+.modal-accomodation {
+    display: flex;
+    flex-direction: column;
+}
+
 .content-wrap {
     padding: 0 2em;
     max-width: 75ch;
-    /* border: 1px solid red; */
 }
 
 .main-section-pad {
@@ -54,6 +58,20 @@ h3 {
     font-weight: var(--font-headers-weight);
 }
 
+.black-title-design {
+    display: inline-block;
+    border: thick solid black;
+    box-shadow: 5px 5px black;
+    padding: 0.5em;
+}
+
+.white-title-design {
+    display: inline-block;
+    border: thick solid white;
+    box-shadow: 5px 5px white;
+    padding: 0.5em;
+}
+
 .hero {
     background-color: var(--palette-1);
     color: var(--font-color-bright);
@@ -67,8 +85,9 @@ h3 {
 
 .card {
     padding: 1em;
-    border-radius: 1%;
-    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 25%);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 25%);
+    background-color: white;
 }
 
 .skills {
@@ -93,17 +112,42 @@ h3 {
 
 @media (min-width: 73ch) {
     .content-wrap {
-        max-width: 85%;
+        max-width: 1600px;
         margin: 0 auto;
     }
+}
 
-    h1::before,
-    h2::before {
-        content: "[ ";
+@media (min-width: 175ch) {
+    .main-title-text {
+        order: 3;
     }
     
-    h1::after,
-    h2::after {
-        content: " ]";
+    .my-name {
+        order: 1;
+    }
+    
+    .my-descriptions {
+        order: 2;
+    }
+    
+    .modal {
+        background-color: white;
+        color: black;
+        max-width: 125ch;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 25%);
+        font-size: 2.1rem;
+        padding: 3em;
+        position: absolute;
+        top: 25rem;
+        align-self: center;    
+    }
+
+    .modal-padding-from-top {
+        padding-bottom: 2rem;
+    }
+
+    .modal-padding-from-bottom {
+        padding-top: 14rem;
     }
 }
