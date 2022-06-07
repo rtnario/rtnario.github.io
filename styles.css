@@ -6,6 +6,17 @@
     --font-color-bright: white;
     --font-color-dark: black;
 
+    /* spacing scale */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.3125rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2.652rem;
+    --font-size-4xl: 4rem;
+
+    /* palette */
     /* https://coolors.co/414361-f7f7f2-e4e6c3-899878-735f3d */
     --palette-1: #414361;
     --palette-2: #f7f7f2;
@@ -19,14 +30,10 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 body {
     font-family: var(--font-content);
     font-weight: var(--font-content-weight);
-    font-size: 1.6rem;
+    font-size: var(--font-size-lg);
 }
 
 .modal-accomodation {
@@ -35,20 +42,20 @@ body {
 }
 
 .content-wrap {
-    padding: 0 2em;
+    padding: 0 1.25em;
     max-width: 75ch;
 }
 
 .main-section-pad {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
 }
 
 .bottom-margin-big {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .bottom-margin-small {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 h1,
@@ -59,14 +66,12 @@ h3 {
 }
 
 .black-title-design {
-    display: inline-block;
     border: thick solid black;
     box-shadow: 5px 5px black;
     padding: 0.5em;
 }
 
 .white-title-design {
-    display: inline-block;
     border: thick solid white;
     box-shadow: 5px 5px white;
     padding: 0.5em;
@@ -75,6 +80,10 @@ h3 {
 .hero {
     background-color: var(--palette-1);
     color: var(--font-color-bright);
+}
+
+p, ul {
+    line-height: 1.5;
 }
 
 .grid-card-container {
@@ -110,24 +119,34 @@ h3 {
     color: var(--font-color-bright);
 }
 
-@media (min-width: 73ch) {
+@media (min-width: 38em) {
     .content-wrap {
-        max-width: 1600px;
+        max-width: 100rem;
         margin: 0 auto;
     }
 }
 
-@media (min-width: 175ch) {
+@media (min-width: 87em) {
     .main-title-text {
-        order: 3;
-    }
-    
-    .my-name {
         order: 1;
+        text-align: center;
+    }
+
+    .main-title-text::before {
+        content: "rtnario@N9-V-Z:~/";
+        color: green;
+    }
+
+    .my-name {
+        order: 2;
     }
     
     .my-descriptions {
-        order: 2;
+        order: 3;
+    }
+
+    .my-summary {
+        order: 4;
     }
     
     .modal {
@@ -136,18 +155,23 @@ h3 {
         max-width: 125ch;
         border-radius: 20px;
         box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 25%);
-        font-size: 2.1rem;
+        font-size: var(--font-size-xl);
         padding: 3em;
         position: absolute;
-        top: 25rem;
+        top: 8rem;
         align-self: center;    
     }
 
     .modal-padding-from-top {
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
     }
 
     .modal-padding-from-bottom {
-        padding-top: 14rem;
+        padding-top: 18rem;
+    }
+
+    .black-title-design,
+    .white-title-design {
+        display: inline-block;
     }
 }
