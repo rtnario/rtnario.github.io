@@ -103,8 +103,13 @@ p, ul {
     background-color: white;
 }
 
+.header-skills {
+    background-color: var(--palette-2);
+}
+
 .skills {
     background-color: var(--palette-2);
+    background-image: url(./img/axiom-pattern.png);
     color: var(--font-color-dark);
 }
 
@@ -113,8 +118,13 @@ p, ul {
     color: var(--font-color-bright);
 }
 
+.header-work {
+    background-color: var(--palette-4);
+}
+
 .work {
     background-color: var(--palette-4);
+    background-image: url(./img/60-lines.png);
     color: var(--font-color-dark);
 }
 
@@ -123,13 +133,17 @@ p, ul {
     color: var(--font-color-bright);
 }
 
-a {
-    color: var(--font-color-bright);
+.contact a {
+    color: var(--font-color-bright)
 }
 
 .credits {
     background-color: var(--palette-1);
     color: var(--font-color-bright);
+}
+
+.credits a {
+    color: var(--font-color-white);
 }
 
 @media (min-width: 38em) {
@@ -226,5 +240,13 @@ a {
 
     .skills-others {
         background-image: url("./img/bulb_white_256.png");
+    }
+
+    .flex-credits {
+        display: flex;
+    }
+
+    .container-transparent-textures {
+        margin-right: 3em;
     }
 }
