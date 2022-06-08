@@ -41,7 +41,7 @@ body {
     flex-direction: column;
 }
 
-.my-face {
+.my-face-container {
     display: none;
 }
 
@@ -98,7 +98,7 @@ p, ul {
 
 .card {
     padding: 1em;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 25%);
     background-color: white;
 }
@@ -120,6 +120,15 @@ p, ul {
 
 .contact {
     background-color: var(--palette-5);
+    color: var(--font-color-bright);
+}
+
+a {
+    color: var(--font-color-bright);
+}
+
+.credits {
+    background-color: var(--palette-1);
     color: var(--font-color-bright);
 }
 
@@ -171,9 +180,12 @@ p, ul {
         padding-right: 3em;
     }
 
-    .my-face {
+    .my-face-container {
         display: inline;
         align-self: center;
+    }
+
+    .my-face {
         max-width: 20rem;
         max-height: 20rem;
         border-radius: 50%;
@@ -190,5 +202,29 @@ p, ul {
     .black-title-design,
     .white-title-design {
         display: inline-block;
+    }
+
+    .skills-tech,
+    .skills-tools,
+    .skills-interpersonal,
+    .skills-others {
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+
+    .skills-tech {
+        background-image: url("./img/code_white_256.png");
+    }
+
+    .skills-tools {
+        background-image: url("./img/gear_white_256.png");
+    }
+
+    .skills-interpersonal {
+        background-image: url("./img/person_white_256.png");
+    }
+
+    .skills-others {
+        background-image: url("./img/bulb_white_256.png");
     }
 }
