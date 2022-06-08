@@ -41,6 +41,10 @@ body {
     flex-direction: column;
 }
 
+.my-face {
+    display: none;
+}
+
 .content-wrap {
     padding: 0 1.25em;
     max-width: 75ch;
@@ -150,6 +154,7 @@ p, ul {
     }
     
     .modal {
+        display: flex;
         background-color: white;
         color: black;
         max-width: 125ch;
@@ -159,11 +164,23 @@ p, ul {
         padding: 3em;
         position: absolute;
         top: 8rem;
-        align-self: center;    
+        align-self: center;
+    }
+
+    .modal-content {
+        padding-right: 3em;
+    }
+
+    .my-face {
+        display: inline;
+        align-self: center;
+        max-width: 20rem;
+        max-height: 20rem;
+        border-radius: 50%;
     }
 
     .modal-padding-from-top {
-        padding-bottom: 5rem;
+        padding-bottom: 9rem;
     }
 
     .modal-padding-from-bottom {
