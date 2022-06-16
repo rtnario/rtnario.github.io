@@ -118,6 +118,10 @@ p, ul {
     color: var(--font-color-bright);
 }
 
+.projects a {
+    color: var(--font-color-bright)
+}
+
 .header-work {
     background-color: var(--palette-4);
 }
